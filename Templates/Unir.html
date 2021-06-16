@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form action="/Unir" method="POST">
+            <label for="">1: </label>
+            <select name="y" id="">
+                {%if variable%}
+                {%for dato in variable %}
+                <option value="{{dato}}">{{dato}}</option>
+                {%endfor%}
+                {%else%}
+                <option value="0">No hay info</option>
+                {%endif%}
+            </select>
+            <label for="">2: </label>
+            <select name="y" id="">
+                {%if var2%}
+                {%for dato in var2 %}
+                <option value="{{dato}}">{{dato}}</option>
+                {%endfor%}
+                {%else%}
+                <option value="0">No hay info</option>
+                {%endif%}
+            </select>
+        </form>
+
+    </div>
+</body>
+</html>
